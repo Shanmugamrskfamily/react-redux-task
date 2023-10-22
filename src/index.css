@@ -1,69 +1,105 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+body {
+  background: url("../public/assets/background.jpg");
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
-a:hover {
-  color: #535bf2;
+.shopping {
+  font-size: 35px;
+  font-weight: bold;
 }
-
-body {
-  margin: 0;
+.card-products {
+  position: relative;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.card {
+  height: 400px;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  color: whitesmoke;
+  flex-direction: column;
+  background: rgba(15, 4, 89, 0.719);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.card:hover {
+  background-color: #051424;
+  box-shadow: 20px 20px 20px 20px rgba(191, 228, 27, 0.54);
+}
+.opt:hover {
+  background-color: #007bff;
+}
+.add {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.3s ease;
 }
-button:hover {
-  border-color: #646cff;
+.NoItems {
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+img {
+  width: 100%;
+}
+.InDe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.price-total {
+  display: flex;
+  height: 30px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.increament {
+  border: none;
+  border-radius: 50%;
+}
+footer {
+  margin-top: 400px;
+  color: whitesmoke;
+  background: rgba(15, 4, 89, 0.974);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+}
+.NavB {
+  color: whitesmoke;
+  background: rgba(15, 4, 89, 0.974);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
 }

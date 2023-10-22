@@ -1,0 +1,126 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "iPhone 14 ",
+            "description": "An apple mobile which is nothing like apple",
+            "price": 70900,
+            "discountPercentage": 12.96,
+            "rating": 4.69,
+            "stock": 94,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+            "images": [
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1661958160674"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "iPhone 13 ",
+            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            "price": 60999,
+            "discountPercentage": 17.94,
+            "rating": 4.44,
+            "stock": 34,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+            "images": [
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone13-202209?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1661958176452"
+              
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Samsung Universe 9",
+            "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+            "price": 29999 ,
+            "discountPercentage": 15.46,
+            "rating": 4.09,
+            "stock": 36,
+            "brand": "Samsung",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+            "images": [
+                "https://i.dummyjson.com/data/products/3/1.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Apple iPad 10th Gen",
+            "description": "OPPO F19 is officially announced on April 2021.",
+            "price": 41990,
+            "discountPercentage": 17.91,
+            "rating": 4.3,
+            "stock": 123,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+            "images": [
+                "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1685967748/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/264261_zzl2aq.png?tr=w-400"
+             
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Apple MacBook Air 2020",
+            "description": "Processor: Apple M1 Display: 33.78 cms (13.3 inches) LED-Backlit Memory: 8GB DDR4 RAM, 256GB SSD ROM OS: macOS Big Sur Warranty: 1 Year Onsite",
+            "price": 81990,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+            "images": [
+                "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1685966414/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256712_v59oqq.png?tr=w-640"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Apple Watch Series 8 GPS",
+            "description": "with Sports Band (45mm Retina LTPO OLED Display, Starlight Aluminium Case) Sleep Monitor | ECG Monitor | Heart Rate | SPO2 Upto 18 Hours Battery Life",
+            "price": 46400.00,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Huawei",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+            "images": [
+                "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1685967775/Croma%20Assets/Communication/Wearable%20Devices/Images/262082_dg5yt8.png?tr=w-640"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Canon DSLR Camera",
+            "description": "Effective Pixels: 24.1 MP  Video Resolution: Full HD at 29.97 FPS Sensor: CMOS, APS-C (22.3 x 14.9mm) 2 Years Product Warranty  9 Point AF, Built-in Speaker, 11 Custom Functions ",
+            "price": 41999,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Canon",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+            "images": [
+                "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1686892427/Croma%20Assets/Imaging/Camera%20and%20Camcorders/Images/267969_0_sfdpf0.png?tr=w-640"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Apple AirPods Pro",
+            "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+            "price": 21494,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+            "images": [
+                "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1674044805/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/251322_0_tpksnj.png?tr=w-640"
+            ]
+        }
+    ]
+}
