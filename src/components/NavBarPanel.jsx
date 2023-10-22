@@ -9,7 +9,7 @@ const NavBar = () => {
   const CartProducts = useSelector((state) => state.cart);
 
   return (
-    <Navbar expand="lg" className="NavB">
+    <Navbar expand="lg" className="NavB fixed-header">
       <Container fluid>
         <Navbar.Brand as={Link} to="/" className="text-white font-weight-bold"> {/* Apply styles here */}
           <span className="shopping">Shopping Cart</span>
