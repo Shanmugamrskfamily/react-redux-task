@@ -62,8 +62,8 @@ If you'd like to contribute to this project, please follow these steps:
 
 ## Author
 
-- [Your Name](https://github.com/Shanmugamrskfamily/)
-- [LinkedIn Profile](https://www.linkedin.com/in/shanmugamrskfamily/)
+- [SHANMUGAM R](https://github.com/Shanmugamrskfamily/)
+- <i class="fa fa-linkdln"></i>[LinkedIn Profile](https://www.linkedin.com/in/shanmugamrskfamily/)
 
 ## License
 
