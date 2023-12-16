@@ -23,10 +23,24 @@ const Cart = () => {
   };
 
   const decreaseCount = (productId) => {
-    setProductCount((prevCounts) => ({
-      ...prevCounts,
-      [productId]: Math.max(prevCounts[productId] - 1, 0), // Ensure count doesn't go below 0
-    }));
+    if (productCount[productId] > 1) {
+      setProductCount((prevCounts) => ({
+        ...prevCounts,
+        [productId]: prevCounts[productId] - 1,
+      }));
+    } else {
+      // If quantity is 1 or below, remove the product from the cart
+      removeProduct(productId);
+    }
+  };
+
+  const removeProduct = (id) => {
+    dispatch(remove(id));
+    setProductCount((prevCounts) => {
+      const newCounts = { ...prevCounts };
+      delete newCounts[id];
+      return newCounts;
+    });
   };
 
   const calculateTotalPrice = () => {
@@ -35,10 +49,6 @@ const Cart = () => {
       total += product.price * productCount[product.id];
     });
     return total;
-  };
-
-  const removetoCart = (id) => {
-    dispatch(remove(id));
   };
 
   const cards = products.map((product) => (
@@ -64,17 +74,14 @@ const Cart = () => {
                 </Card.Text>
               </div>
               <div className="price-total">
-              <Button
+                <Button
                   variant="primary"
                   className="increament"
                   style={{ borderRadius: "50%" }}
-                  onClick={() => {
-                    if (productCount[product.id] > 0) {
-                      decreaseCount(product.id);
-                    } 
-                    
-                  }}
-                >-</Button>
+                  onClick={() => decreaseCount(product.id)}
+                >
+                  -
+                </Button>
                 <Card.Text className="text">
                   {productCount[product.id] || 1}
                 </Card.Text>
@@ -83,13 +90,15 @@ const Cart = () => {
                   className="increament"
                   style={{ borderRadius: "50%" }}
                   onClick={() => increaseCount(product.id)}
-                >+</Button>
+                >
+                  +
+                </Button>
               </div>
             </div>
             <Button
               variant="danger"
               className="add mt-2"
-              onClick={() => removetoCart(product.id)}
+              onClick={() => removeProduct(product.id)}
             >
               Remove Item
             </Button>
@@ -103,7 +112,9 @@ const Cart = () => {
     <>
       <div className="text-white">
         <span style={{ fontSize: 30 }}>My Cart</span> <br />
-        <span style={{ fontSize: 30 }}>Grand Total:<i class="fa fa-inr"></i> {calculateTotalPrice()}</span>
+        <span style={{ fontSize: 30 }}>
+          Grand Total:<i class="fa fa-inr"></i> {calculateTotalPrice()}
+        </span>
         {products.length === 0 && (
           <div className="NoItems">
             <img
