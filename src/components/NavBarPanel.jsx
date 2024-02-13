@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className="NavB fixed-header">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/" className="text-white font-weight-bold"> {/* Apply styles here */}
+        <Navbar.Brand as={Link} to="/" className="text-white font-weight-bold"> 
           <span className="shopping">Shopping Cart</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className="bg-light" />
@@ -23,8 +23,8 @@ const NavBar = () => {
           </Nav>
           <Nav>
             <Nav.Link as={Link} to="/cart" className="text-white opt">
-              My Cart
-              <i className="fa-solid fa-cart-shopping">{CartProducts.length}</i>
+              My Cart ({CartProducts.length})
+              <i className="fa-solid fa-cart-shopping"></i>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
